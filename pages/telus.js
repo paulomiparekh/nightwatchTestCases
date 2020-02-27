@@ -34,6 +34,7 @@ var stateSelection={
   selectState: function(state){
     this.useCss()
     .click('#header-container > div.sc-bbmXgH.fKBsQX > div > div > div > div:nth-child(3) > a')
+    .pause(2000)
     .useXpath().click("//*[contains(text(),'Alberta')]")
     .verify.containsText('//*[@id="header-container"]/div[1]/div/div/div/div[2]/a','AB','StateName matches with selection')
     .pause(1000)

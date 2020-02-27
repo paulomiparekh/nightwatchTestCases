@@ -21,7 +21,7 @@ module.exports = {
         var internet=browser.globals.internet;
         internetSelection.verifyAndSelectInternet(internet); //Select internet from  main page
          browser.setValue('//*[@id="autocomplete-form-address-google"]',[internet.address,browser.Keys.ENTER]) //Enter service address for the internet
-        .useXpath().click("//*[contains(text(),'Check availability')]")
+        .useXpath().click("//*[contains(text(),'Check address')]")
         .pause(3000)
     },
 
