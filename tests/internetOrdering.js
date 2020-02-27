@@ -19,9 +19,10 @@ module.exports = {
 
         var internetSelection = browser.page.plan();
         var internet=browser.globals.internet;
-        internetSelection.verifyAndSelectInternet(internet); //Select internet from  main page
-         browser.setValue('//*[@id="autocomplete-form-address-google"]',[internet.address,browser.Keys.ENTER]) //Enter service address for the internet
-        .useXpath().click("//*[contains(text(),'Check address')]")
+        internetSelection.verifyAndSelectInternet(internet); //Select internet from  main page\
+        browser.pause(3000)
+         .setValue('//*[@id="autocomplete-form-address-google"]',[internet.address,browser.Keys.ENTER]) //Enter service address for the internet
+         .useXpath().click("//*[contains(text(),'Check address')]")
         .pause(3000)
     },
 
