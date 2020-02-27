@@ -3,8 +3,12 @@ module.exports = {
     before : function(client) {
         var telus = client.page.telus();
         telus.navigate() //Launch Telus site
-       .assert.titleContains('TELUS');
-       client.maximizeWindow();
+       .assert.titleContains('TELUS')      
+        client.maximizeWindow();
+        client.click('#header-container > div.sc-bbmXgH.fKBsQX > div > div > div > div:nth-child(3) > a')
+        .pause(2000)
+        .useXpath().click("//*[contains(text(),'Ontario')]") //State selection to ON
+      
       },
 
     'Phone selection': function (browser) { 
@@ -46,7 +50,7 @@ module.exports = {
   var cart = browser.page.checkout();
   var checkoutParams=browser.globals.cart;
   cart.verifyCheckoutData(checkoutParams);  //Verify shopping cart based on selection
-  browser.pause(5000)
+  browser.pause(8000)
 }
 
 }

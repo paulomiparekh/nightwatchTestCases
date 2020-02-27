@@ -1,5 +1,4 @@
-
-  
+ 
   var planVerify={ //Method to select and verify offers and plan for wireless
   
     verifyAndSelectPlan: function(offers){
@@ -56,7 +55,7 @@
       commands: [planVerify,internetSelection,internetPlan],
       elements: {
         plan1: {
-           selector: '//*[@id="PSYSTB115"]',
+           selector: '/html/body/main/div[4]/div/div/div/div/div/div/div[4]/div/div[2]/div/div/div[2]/div[2]/div/div[1]/div/div[2]/label/span/span/input',
            locateStrategy: 'xpath'
          },
          planText:{
