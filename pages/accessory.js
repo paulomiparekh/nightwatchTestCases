@@ -26,7 +26,7 @@
       commands: [accessory],
       elements: {
        accessoryIcon: {
-          selector: '//*[@id="app"]/div/div/section[3]/div/div[2]/div[4]/div/a/div/picture/img',
+          selector: '//*[@id="app"]/div/div/section[4]/div/div[2]/div[4]/div/a/div/picture/img',
           locateStrategy: 'xpath'
         },
         headphones:{
