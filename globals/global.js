@@ -1,6 +1,6 @@
 var main = {
     
-    mobileImg:'//*[@id="app"]/div/div/section[3]/div/div[2]/div[1]/div/a/div/picture/img', //Phone image
+    mobileImg:'//*[@id="app"]/div/div/section[4]/div/div[2]/div[1]/div/a/div/picture/img', //Phone image
     InternetImg:'//*[@id="app"]/div/div/section[4]/div/div[2]/div[2]/div' //internet image
 
 };
